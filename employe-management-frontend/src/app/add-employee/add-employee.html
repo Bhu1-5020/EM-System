@@ -1,0 +1,108 @@
+<div class="formbold-main-wrapper">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="formbold-form-wrapper">
+    
+  
+
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+      <div class="formbold-form-title">
+        <h2 class="">Add New Employee</h2>
+       
+      </div>
+
+      <div class="formbold-input-flex">
+        <div>
+          <label for="firstname" class="formbold-form-label">
+            First name
+          </label>
+          <input
+            type="text"
+            name="firstName"  [(ngModel)]="employee.firstName"
+            class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="lastname" class="formbold-form-label"> Last name </label>
+          <input
+            type="text"
+            name="lastName"  [(ngModel)]="employee.lastName"
+            class="formbold-form-input"
+          />
+        </div>
+      </div>
+       
+        <div class="formbold-input-flex">
+        <div>
+          <label for="email" class="formbold-form-label"> Email </label>
+          <input
+            type="email"
+            name="email"  [(ngModel)]="employee.email" 
+          class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="bith" class="formbold-form-label"> Date of birth </label>
+          <input
+            type="date"
+            name="dateOfBirth" [(ngModel)]="employee.dateOfBirth"
+             class="formbold-form-input"
+          />
+        </div>
+      </div>
+      
+
+      <div class="formbold-mb-3">
+        <label for="address" class="formbold-form-label">
+          Address - Street Name
+        </label>
+        <input
+          type="text"
+          name="address" [(ngModel)]="employee.address"
+          
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-input-flex">
+        <div>
+          <label for="state" class="formbold-form-label"> City </label>
+          <input
+            type="text"
+            name="city" [(ngModel)]="employee.city"
+           class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="country" class="formbold-form-label"> Post/Zip code </label>
+          <input
+            type="number"
+            name="zipCode" [(ngModel)]="employee.zipCode" 
+             class="formbold-form-input"
+          />
+        </div>
+      </div>
+
+      <div class="formbold-input-flex">
+        <div>
+          <label for="post" class="formbold-form-label"> Phone number </label>
+          <input
+            type="text"
+            name="phoneNumber" [(ngModel)]="employee.phoneNumber"
+             class="formbold-form-input"
+          />
+        </div>
+        <div>
+          <label for="area" class="formbold-form-label"> Employment Type </label>
+          <select name="employmentType"  [(ngModel)]="employee.employmentType" class="formbold-form-input">
+            <option value="Full-Time"> Full-Time </option>
+            <option value="Part-Time"> Part-Time </option>
+           </select >
+        </div>
+      </div>
+
+       <button class="formbold-btn">Submit</button>
+    </form>
+  </div>
+</div>

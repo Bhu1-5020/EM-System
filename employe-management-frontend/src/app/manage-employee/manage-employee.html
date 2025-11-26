@@ -1,0 +1,71 @@
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+      <h1></h1>
+      <p>Edit and manage Employee</p>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrapper">
+      <div class="table-scroll">
+          <table >
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>first Name</th>
+                      <th>Last Name</th>
+                      <th>Address</th>
+                      <th>City</th>
+                      <th>Zip Code</th>
+                      <th>Employment Type</th>
+                      <th>Phone Number</th>
+                      <th>Email</th>
+                      <th>Save</th>
+                      <th>Delete</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                  <tr *ngFor="let emp of employee">
+                      <td>{{ emp.id }}</td>
+                      <td>
+                        <input class = "inputName" [(ngModel)]="emp.firstName" name="fn{{emp.id}}" />
+                       </td>
+                      <td>
+                        <input class = "inputName" [(ngModel)]="emp.lastName" name="fn{{emp.id}}" />
+                      </td>
+                      <td>
+                        <input [(ngModel)]="emp.address" name="fn{{emp.id}}" />
+                      </td>
+                      <td>
+                        <input class="inputLength"[(ngModel)]="emp.city" name="fn{{emp.id}}" />
+                      </td>
+                       <td >
+                        <input class="inputLength" [(ngModel)]="emp.zipCode" name="fn{{emp.id}}" />
+                      </td>
+                      <td>
+                        <input  class="inputType"[(ngModel)]="emp.employmentType" name="fn{{emp.id}}" />
+                      </td>
+                       <td>
+                        <input class = "inputPhone" [(ngModel)]="emp.phoneNumber" name="fn{{emp.id}}" />
+                      </td>
+                        <td>
+                        <input class = "" [(ngModel)]="emp.email" name="fn{{emp.id}}" />
+                      </td>
+                      <td>
+                          <button (click)="updateEmp(emp)" class="btn-save">Save</button>
+                      </td>
+
+                      <td>
+                         <button (click)="deleteEmp(emp.id)" class="btn-delete">
+                Delete
+              </button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+
+        

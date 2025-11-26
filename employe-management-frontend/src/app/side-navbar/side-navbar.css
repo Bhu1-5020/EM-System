@@ -1,0 +1,70 @@
+/* ========================
+   Sidebar Container
+   ======================== */
+#sidebar {
+  min-width: 250px;             /* Minimum width of sidebar */
+  max-width: 250px;             /* Maximum width of sidebar */
+  background: #343a40;          /* Dark background color */
+  color: #fff;                  /* Default text color */
+  transition: all 0.3s;         /* Smooth transition for width or hover changes */
+  height: 100vh;                /* Full viewport height */
+  position: fixed;              /* Fixed position, stays on screen */
+  top: 0;                        /* Top of the viewport */
+  left: 0;                       /* Align left */
+  overflow-y: auto;             /* Scroll if content exceeds height */
+  padding-top: 50px;            /* Space at the top */
+ 
+}
+
+/* ========================
+   Sidebar Menu List
+   ======================== */
+#sidebar ul.components {
+  padding: 0;                   /* Remove default padding */
+  margin: 0;                    /* Remove default margin */
+  list-style: none;             /* Remove bullets */
+}
+
+#sidebar ul.components li {
+  padding: 15px 30px;           /* Space around each menu item */
+  font-size: 22px;              /* Base text size */
+  transition: all 0.2s;         /* Smooth hover effect for background & color */
+}
+
+/* ========================
+   Sidebar Links
+   ======================== */
+#sidebar ul.components li a {
+  color: #9da4ac;               /* Light gray text color */
+  text-decoration: none;        /* Remove underline */
+  display: flex;                /* Flex for icon + text alignment */
+  align-items: center;          /* Vertically center items */
+}
+
+/* ========================
+   Sidebar Icons
+   ======================== */
+#sidebar ul.components li a span {
+  margin-right: 20px;           /* Space between icon and text */
+  width: 20px;                  /* Fixed width for alignment */
+  text-align: center;           /* Center the icon */
+}
+
+/* ========================
+   Hover Effects for Menu Items
+   ======================== */
+#sidebar ul.components li:hover {
+  background: #1f5a94;          /* Dark gray background on hover */
+}
+
+#sidebar ul.components li:hover a {
+  color: #ffffff;               /* White text on hover */
+}
+
+
+
+
+
+
+
+

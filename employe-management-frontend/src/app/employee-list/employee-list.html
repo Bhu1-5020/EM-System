@@ -1,0 +1,43 @@
+ <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Employee List </h1>
+           
+        </div>
+    <!-- Table -->
+        <div class="table-wrapper">
+            <div class="table-scroll">
+                <table >
+                    <thead>
+                        <tr >
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Date of birth</th>
+                            <th>Employment Type</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Zip Code</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                  
+                     <tr *ngFor = "let emp of employees">
+                            <td>{{emp.id}}</td>
+                            <td>{{emp.firstName}}</td>
+                            <td>{{emp.lastName}}</td>
+                            <td>{{emp.dateOfBirth}}</td>
+                            <td>{{emp.employmentType}}</td>
+                            <td>{{emp.address}}</td>
+                            <td>{{emp.city}}</td>
+                            <td>{{emp.zipCode}}</td>
+                            <td>{{emp.email}}</td>
+                        </tr>
+                         </tbody>
+                </table>
+            </div>
+           
+        </div>
+
+       
