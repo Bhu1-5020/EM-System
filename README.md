@@ -15,3 +15,6 @@ This project demonstrates basic CRUD operations and RESTful APIs.
 - **Database:** MySQL with JPA
   ## Features
 - App employee, View , Update, Delete employee
+
+## Screenshot 
+![Screenshot]
