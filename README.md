@@ -21,3 +21,12 @@ This project demonstrates basic CRUD operations and RESTful APIs.
 
 ![Screenshot](https://github.com/Bhu1-5020/EM-System/blob/fba061b25866a7b04bcae53d1971cf62b07b676e/Screenshot/Em-web-app.png)
 
+- View employee list
+  
+![Screenshot](https://github.com/Bhu1-5020/EM-System/blob/10c404ed1b853cf1cd77c780ea553701328cc780/Screenshot/Em-web-app4.png)
+
+- Edit and delete employee
+
+![Screenshot](https://github.com/Bhu1-5020/EM-System/blob/10c404ed1b853cf1cd77c780ea553701328cc780/Screenshot/Em-web-app3.png)
+
+
